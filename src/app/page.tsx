@@ -15,7 +15,9 @@ export default function Home() {
 				continue my work as an engineering lead and architect with an
 				organization focused on making changes in the climate sector.
 			</main>
-			<footer className={styles.footer}>footer</footer>
+			<footer className={styles.footer}>
+				© Jack Skrable {new Date().getFullYear()}
+			</footer>
 		</div>
 	);
 }
