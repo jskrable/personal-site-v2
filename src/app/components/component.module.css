@@ -25,13 +25,13 @@
 	line-height: 1;
 	border-radius: 4px;
 	font-size: 15px;
-	color: var(--violet-11);
+	color: var(--brown-11);
 }
 .navMenuLink:focus {
-	box-shadow: 0 0 0 2px var(--violet-7);
+	box-shadow: 0 0 0 2px var(--brown-7);
 }
 .navMenuLink:hover {
-	background-color: var(--violet-3);
+	background-color: var(--brown-3);
 }
 
 .navMenuLink {
