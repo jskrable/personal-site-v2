@@ -1,35 +1,13 @@
-"use client";
+import data from "@/app/api/photos/data.json";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import Loading from "../_components/Loading/Loading";
 import styles from "./page.module.css";
 
-export default function PhotoBook() {
-	const [photos, setImages] = useState([]);
-	const [loading, setLoading] = useState(true);
-
-	useEffect(() => {
-		async function fetchImages() {
-			try {
-				const response = await fetch("/api/photos");
-				const data = await response.json();
-				setImages(data.photos);
-			} catch (error) {
-				console.error("Error fetching images:", error);
-			} finally {
-				setLoading(false);
-			}
-		}
-		fetchImages();
-	}, []);
-
-	if (loading) return <Loading fullPage />;
-
+export default () => {
 	return (
 		<div className={styles.container}>
 			<div className={styles.gallery}>
-				{photos.map(({ alt, id, src }) => (
+				{data.map(({ alt, id, src }) => (
 					<Link
 						key={id}
 						href={`/photos/${id}`}
@@ -54,4 +32,4 @@ export default function PhotoBook() {
 			</div>
 		</div>
 	);
-}
+};

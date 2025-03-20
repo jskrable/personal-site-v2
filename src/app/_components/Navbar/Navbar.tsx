@@ -12,8 +12,9 @@ interface NavbarProps {
 }
 
 const navItems = [
-	{ label: "Home", path: "/" },
-	{ label: "Photos", path: "/photos" },
+	{ label: "home", path: "/" },
+	{ label: "photos", path: "/photos" },
+	{ label: "projects", path: "/projects" },
 ];
 
 const MenuButton = (
