@@ -59,6 +59,7 @@
 .ctas {
   display: flex;
   gap: 16px;
+  justify-content: center;
 }
 
 .ctas a {

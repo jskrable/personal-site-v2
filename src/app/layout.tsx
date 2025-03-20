@@ -1,17 +1,18 @@
+import { Theme, ThemePanel } from "@radix-ui/themes";
 import "@radix-ui/themes/styles.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import Navbar from "./components/Navbar";
+import Navbar from "./_components/Navbar/Navbar";
+import { userAgent } from "./_utils/userAgent";
 import "./globals.css";
-import { Theme, ThemePanel } from "@radix-ui/themes";
 
 const geistSans = localFont({
-	src: "./fonts/GeistVF.woff",
+	src: "./_fonts/GeistVF.woff",
 	variable: "--font-geist-sans",
 	weight: "100 900",
 });
 const geistMono = localFont({
-	src: "./fonts/GeistMonoVF.woff",
+	src: "./_fonts/GeistMonoVF.woff",
 	variable: "--font-geist-mono",
 	weight: "100 900",
 });
@@ -21,11 +22,12 @@ export const metadata: Metadata = {
 	description: "Jack Skrable's Personal Website",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
 	children,
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
+	const { isMobile } = await userAgent();
 	return (
 		<html lang="en">
 			<body className={`${geistSans.variable} ${geistMono.variable}`}>
@@ -35,7 +37,7 @@ export default function RootLayout({
 					radius="small"
 					scaling="100%"
 				>
-					<Navbar />
+					<Navbar isMobile={isMobile()} />
 					{children}
 					<ThemePanel />
 				</Theme>

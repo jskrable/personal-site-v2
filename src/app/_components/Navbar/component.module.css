@@ -8,8 +8,9 @@
 
 .navList {
 	display: flex;
+	width: 100vw;
   gap: 1rem;
-	justify-content: center;
+	justify-content: left;
 	padding: 4px;
 	border-radius: 6px;
 	list-style: none;
@@ -25,13 +26,13 @@
 	line-height: 1;
 	border-radius: 4px;
 	font-size: 15px;
-	color: var(--brown-11);
+	color: var(--accent-9);
 }
 .navMenuLink:focus {
-	box-shadow: 0 0 0 2px var(--brown-7);
+	box-shadow: 0 0 0 2px var(--accent-3);
 }
 .navMenuLink:hover {
-	background-color: var(--brown-3);
+	background-color: var(--accent-3);
 }
 
 .navMenuLink {
@@ -39,4 +40,26 @@
 	text-decoration: none;
 	font-size: 15px;
 	line-height: 1;
+}
+
+.trigger {
+	all: unset;
+}
+
+.dialogContent {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding-top: 0.5rem;
+	gap: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .navMenuLink {
+		display: block;
+		text-decoration: none;
+		width: 100%;
+		font-size: 15px;
+		line-height: 2;
+	}
 }
