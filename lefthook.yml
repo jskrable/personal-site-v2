@@ -1,0 +1,11 @@
+pre-commit:
+  commands:
+    lint:
+      glob: "*.{json,js,jsx,ts,tsx,mts}"
+      run: pnpm biome lint {staged_files}
+    format:
+      glob: "*.{json,js,jsx,ts,tsx,mts}"
+      run: pnpm biome format {staged_files} --write && pnpm biome check {staged_files} --write
+    stage-lint:
+      glob: "*.{json,js,jsx,ts,tsx,mts}"
+      run: git add {staged_files}
