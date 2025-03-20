@@ -1,0 +1,38 @@
+[
+	{
+		"title": "the-sea",
+		"src": "/projects/the-sea.gif",
+		"github": "https://github.com/jskrable/the-sea",
+		"description": "An interactive application that mimics fish schooling behavior built in Java using the Processing library. Uses a genetic algorithm to train the fish to school better and avoid a predator object that roams searching for a meal."
+	},
+	{
+		"title": "music-rec",
+		"src": "/projects/music-rec.gif",
+		"github": "https://github.com/jskrable/music-rec",
+		"description": "A music recommendation model, built with Keras, TensorFlow, and Flask. Uses a deep-learning neural network to categorize songs and pick a recommendation based on user input listening history."
+	},
+	{
+		"title": "the-boysens",
+		"src": "/projects/the-boysens.gif",
+		"github": "https://github.com/jskrable/the-boysens",
+		"description": "Virtual headstone for the one and only boysens, in Next.js & Prisma."
+	},
+	{
+		"title": "cryptography",
+		"src": "/projects/cryptography.gif",
+		"github": "https://github.com/jskrable/cryptography",
+		"description": "Custom cryptographic library in base Python 3.7. Includes classes for El Gamal and RSA, each with functions for encrypting, decrypting, and breaking. Breaking methods used are Pollard's Rho and baby step giant step."
+	},
+	{
+		"title": "tsp",
+		"src": "/projects/tsp.gif",
+		"github": "https://github.com/jskrable/tsp",
+		"description": "A non-optimal solution to the travleing salesman problem using simulated annealing, built in base Python 3.7."
+	},
+	{
+		"title": "sarcasm-detection",
+		"src": "/projects/sarcasm-detection.gif",
+		"github": "https://github.com/jskrable/sarcasm-detection",
+		"description": "A binary classifier built in PySpark that categorizes news headlines into two categories, satire or genuine. Uses multiple machine learning algorithms and evaluates the performance of each. Algorithms include random forest, naive Bayes, and support vector machine."
+	}
+]

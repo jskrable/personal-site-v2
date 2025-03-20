@@ -6,7 +6,7 @@ import {
 import { Button } from "@radix-ui/themes";
 import styles from "./page.module.css";
 
-export default function Home() {
+export default () => {
 	return (
 		<div className={styles.page}>
 			<main className={styles.main}>
@@ -60,4 +60,4 @@ export default function Home() {
 			</footer>
 		</div>
 	);
-}
+};
