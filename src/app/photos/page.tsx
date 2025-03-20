@@ -12,6 +12,7 @@ export default () => {
 						key={id}
 						href={`/photos/${id}`}
 						className={styles.thumbnailContainer}
+						prefetch
 						shallow
 					>
 						<Image
