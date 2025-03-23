@@ -39,7 +39,6 @@ export default async function RootLayout({
 				>
 					<Navbar isMobile={isMobile()} />
 					{children}
-					<ThemePanel />
 				</Theme>
 			</body>
 		</html>
