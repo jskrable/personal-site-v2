@@ -11,16 +11,17 @@ export default () => {
 		<div className={styles.page}>
 			<main className={styles.main}>
 				<div>
-					Experienced and alloyed full stack software engineer and IT generalist
-					with 10 years of professional experience. In my current role for Beam,
-					a public benefits facilitation SaaS company, I came on as a software
-					engineer supporting an existing legacy application. Despite having no
-					prior experience with the tech stack, I quickly taught myself
-					Typescript, React, and GraphQL and built a custom application to
-					support a wide range of public benefits, expanding the company’s reach
-					as well as the performance and capabilities of the software. I’m
-					looking to continue my work as an engineering lead and architect with
-					an organization focused on making changes in the climate sector.
+					Experienced and versatile full stack software engineer and IT
+					generalist with 10 years of professional experience. In my current
+					role at Beam, a public benefits facilitation SaaS company, I joined as
+					a software engineer supporting an existing legacy application. Despite
+					having no prior experience with the tech stack, I quickly mastered
+					Typescript, React, and GraphQL to build a custom application
+					supporting a wide range of public benefits. This expanded the
+					company's reach while enhancing software performance and capabilities.
+					I'm seeking an engineering lead and architect position with an
+					organization dedicated to creating positive social impact through
+					innovative technology solutions.
 				</div>
 				<div className={styles.ctas}>
 					<a
